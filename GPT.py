@@ -9,7 +9,7 @@ import re
 load_dotenv()
 
 # Configure the Gemini API key (replace with your actual API key)
-genai.configure(api_key="AIzaSyBeSEPugvPSNEjEuLGOwnSPlG0KctT1kFI")
+genai.configure(api_key="API Key")
 
 # Function to load Gemini model and provide SQL query based on a question
 def get_gemini_response(question, prompt):
