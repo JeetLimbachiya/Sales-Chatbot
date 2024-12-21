@@ -13,7 +13,7 @@ genai.configure(api_key="API Key")
 
 # Function to load Gemini model and provide SQL query based on a question
 def get_gemini_response(question, prompt):
-    model_name = 'gemini-1.5-flash'  # Use the correct model
+    model_name = 'gemini-1.5-flash'  # Use the correct model as per the API key generated
     model = genai.GenerativeModel(model_name)
     response = model.generate_content([{"text": prompt[0]}, {"text": question}])  # Properly format the prompt and question
     return response.text.strip()  # Return the response as a cleaned-up string
